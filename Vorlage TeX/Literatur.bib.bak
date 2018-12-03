@@ -1,0 +1,64 @@
+% Encoding: UTF-8
+
+@Book{test,
+  title     = {test},
+  publisher = {michael},
+  year      = {1999},
+  author    = {ter},
+  editor    = {Springer},
+}
+
+@Book{DRM,
+  title     = {Ökonomie der Musikindustrie},
+  publisher = {Gabler},
+  year      = {2008},
+  author    = {Willms Buhse, Dirk Günnewig},
+  editor    = {Michael Clement, Oliver Schusser, Dominik Papies},
+}
+
+@Conference{DRM-Schema,
+  author    = {William Ku, Chi-Hung Chi},
+  title     = {{Survey on the Technological Aspects of Digital Rights Management}},
+  booktitle = {International Conference on Information Security},
+  year      = {2004},
+}
+
+@Online{WinNT,
+  author       = {urbandsire},
+  title        = {{Musikdownloadportale - Allgemein}},
+  howpublished = {{https://www.urbandesire.de/2006/01/23/musikdownloadportale-allgemein}},
+  month        = dec,
+  year         = {2006},
+  url          = {https://www.urbandesire.de/2006/01/23/musikdownloadportale-allgemein/},
+  urldate      = {2018-12-21},
+}
+
+@Book{Architektur,
+  title     = {{Digital Rights Management}},
+  publisher = {Springer Verlag},
+  year      = {2003},
+  editor    = {Becker, Berhard and Buhse, Willms and Günnewig, Dirk and Rump, Niels},
+}
+
+@Conference{TypesOfDRM,
+  author    = {Regner, Tobias and Barria, Javier A. and V.Pitt, Jeremy and Neville, Brendan},
+  title     = {{An artist life cycle model for digital media content: Strategies for the Light Web and the Dark Web}},
+  booktitle = {Electronic Commerce Research and Applications},
+  year      = {2009},
+}
+
+@Book{LightWeightDRM,
+  title     = {{Distribution und Schutz digitaler Medien durch Digital Rights Management}},
+  publisher = {Springer-Verlag Berlin Heidelberg},
+  year      = {2005},
+  editor    = {Arnold Picot, Heinz Thielmann},
+}
+
+@Article{Superdistribution,
+  author  = {Yen, Chih-Ta and Liaw, Horng-Twu and Lo, Nai-Wei},
+  title   = {Digital rights management system with user privacy, usage transparency, and superdistribution support},
+  journal = {International Journal of Communicatio Systems},
+  year    = {2012},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -1,0 +1,119 @@
+\chapter{Vorbetrachtungen und Grundlagen}
+\label{sec:Vorbetrachtungen und Grundlagen}
+\begin{spacing}{1.5}
+In den nachfolgenden Punkten erfolgt eine Definition, Einordnung und interdisziplinäre Betrachtung der digitalen Rechteverwaltung. Im Kontext dazu werden das gesellschaftliche und juristische Umfeld näher beleuchtet. 
+
+\section{Begriffsdefinition Digital Rights Management}
+\label{sec:Begriffsdefinition Digital Rights Management}
+Bevor mit der eigentlichen Betrachtung von Digital Rights Management(DRM) begonnen wird, ist eine einleitende Definition zum besseren Verständnis aufgeführt. Das Konzept DRM umfasst sogenannte Nutzungsregeln für ein digitales Objekt. Dabei umfasst der Begriff digitales Objekt alle möglichen digitalen Informationsmedien wie beispielsweise Bilder, eBooks usw. Die Nutzungsparameter umfassen dabei folgende Einschränkungen:
+
+\begin{itemize}
+\item \textit{Wer} ist berechtigt die digitalen Inhalte zu nutzen?
+\item \textit{Wann} und \textit{Wo} werden die digitalen Inhalte genutzt?
+\item \textit{Wie} wird das digitale Medium benutzt?
+\end{itemize}
+
+Dabei beinhaltet \textit{Wer} den Nutzungsberechtigten für das digitale Objekt, \textit{Wann} den Nutzungszeitraum(zeitlich begrenzte oder unbegrenzte Leihe) und \textit{Wo} definiert das autorisierte Abspielmedium. Das \textit{Wie} weißt beispielsweise Schreibrechte oder ausschließlich Leserechte dem Berechtigten zu. \cite [S.227]{DRM} \\
+Neben dem Aufstellen der spezifischen Nutzungsregeln ist aber auch die Überwachung und Einhaltung dieser Parameter ein elementarer Bestandteil solcher Systeme. Dies wird zumeist von proprietärer Software übernommen, die die Einhaltung der Nutzungsbedingungen für das digitale Objekt gewährleistet.   
+
+\section{Aufbau von DRM Systemen}
+\label{Architektonischer Aufbau von DRM Systemen} 
+Um ein besseres Verständnis über die Abläufe innerhalb eines DRM-basierten Systems zu bekommen, wird im Folgenden der grundsätzliche Aufbau solcher Systeme erläutert. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{img/DRM_Architektur}
+\caption{DRM Ablaufschema}
+\label{fig:DRM_Schema}
+\end{figure}
+
+Dieser Prozess, welcher in Abbildung \ref{fig:DRM_Schema} zu sehen ist, gliedert sich in drei Kernelemente. Um den architektonischen Aufbau derzeitiger Systeme zu verstehen, werden diese Kernelemente kurz vorgestellt. 
+\begin{itemize}
+\item \textbf{Inhalteserver} \\
+Der Inhalteserver stellt das digitale Objekt in verschlüsselter Form zur Verfügung. 
+\item \textbf{Lizenzserver} \\
+Der Lizenzserver stellt die Nutzungsregeln für das digitale Objekt in verschlüsselter Form zur Verfügung. Diese können in feingranular unterteilt werden. Nähre Informationen sind unter 2.8 zu finden.  
+
+
+\item \textbf{Clientanwendung} \\
+Die Clientanwendung ist ein proprietäres System, welches das chiffrierte digitale Objekt und die jeweiligen Nutzungsrechte verarbeitet. Basierend auf den Nutzungsregeln wird das entschlüsselte digitale Objekt dem Anwender zur Verfügung gestellt. Jeglicher Fehlgebrauch, der nicht auf den Nutzungsregeln basiert, wird unterbunden. 
+\end{itemize}
+
+Um die Digital Rights Management Systeme auch aus kommerzieller Sicht zu komplementieren wird eine sogenanntes \textit{Clearinghouse} in das Gesamtkonstrukt eingebettet. Dieses übernimmt den Zahlungsvorgang. Dabei werden nachträgliche Erweiterung im Nutzungsrecht ebenfalls über diese Stelle abgewickelt \cite[S.151]{Architektur}. Nähere Informationen zum ökonomischen Standpunkt sind unter 2.8 aufgelistet. \\
+
+!!Aüßere Form + Zitatquelle überprüfen
+
+Neben der allgemeinen Definition haben sich zwei spezialisierte Konzepte der Digitalen Rechteverwaltung herausgebildet, die im nachfolgenden kurz vorgestellt werden.  
+
+
+\section{Hard Weight DRM}
+Der zuvor geschilderte Aufbau eines DRM-Systems wird auch als \textit{Hard DRM} bezeichnet. Dieses umfasst alle proprietären Systeme, die auf eine strikte Einhaltung der Nutzungsrechte beharren. Das digitale Objekt kann nur in der Art und Weise genutzt werden, wie es in den dazugehörigen Nutzungsregeln hinterlegt ist. Somit werden nur autorisierte Benutzer Zugang zum digitalen Medium gewährt. Gleichzeitig wird eine Autorisierung durchgeführt, die den Aktionsumfang für den Benutzer festlegt und somit entsprechend einschränkt. Möchte man den Umfang der Aktionen erweitern, kann dies durch Kauf zusätzlicher Nutzungsregeln initiiert werden \cite[S.335]{TypesOfDRM}. \\
+Starke Einschränkungen rufen immer wieder illegale Machenschaften in den Fokus. Aufgrund dessen haben sich Industrie und Wissenschaft mit Alternativlösungen auseinandergesetzt.  
+\label{sec: Hard Weight DRM}
+
+
+\section{Light Weight DRM}
+\label{sec:Light Weight DRM}
+Der Gedanke hinter der sogenannten \textit{leichten digitalen Rechteverwaltung} ist ein Verzicht das Beharren auf Einhaltung der Nutzungsbestimmungen. Somit werden dem Endverbraucher mehr Freiheiten gewährt, was zu einer größeren Akzeptanz führt. \\
+Jedes erworbene digitale Gut wird mit einer digitalen Signatur dem Benutzer zugeordnet. Die digitale Signatur ist wie eine Unterschrift in der analogen Welt anzusehen. Dieses Verfahren verursacht keinerlei Einschränkungen bei der Nutzung. Wird allerdings gegen die Nutzungsregeln verstoßen, so kann eindeutig nachgewiesen werden, wer gegen diese verstoßen hat. Mit diesem Wissen können im Nachhinein strafrechtliche Verfolgungen eingeleitet werden. \\
+Um für die Konsumenten einen Anreiz zu schaffen, dass jeweilige digitale Produkt mittels Superdistribution\footnote{\label{foot:2}Verbreitung von chiffrierten digitalen Objekten unter den Benutzern über das Internet, Bluetooth oder sonstige standardisierte Übertragungswege \cite{Superdistribution}} weiterzuverbreiten, ist das \textit{PotatoSystem} entwickelt worden. Dieses begünstigt  
+
+
+\cite[S. 90 ff.]{LightWeightDRM}
+
+
+
+\section{Anforderungen an DRM}
+\label{sec: Anforderungen an DRM}
+\subsection{Authentifikaiton}
+\label{Authentifikation}
+\subsection{Autorisierung}
+\label{Autorisierung}
+
+\section{Juristische Betrachtung}
+Digital Rights Management Systeme bewegen sich in einen schwierigen Terrain. Nicht zuletzt das es sich bei digitalen Objekten um immaterielle, nicht greifbare Gegenstände handelt. 
+\label{sec:Juristische Betrachtung}
+\subsection{Recht auf Löschung der Daten}
+\label{Recht auf Löschung der Daten}
+\subsection{Recht auf Privatkopie}
+\label{Recht auf Privatkopie}
+\subsection{Datenschutzgrundverordnung}
+\label{Datenschutzgrundverordnung}
+\subsection{Urheberrecht}
+\label{Urheberrecht}
+
+\section{Gesellschaftliche Betrachtung}
+\label{sec:Gesellschaftliche Betrachtung}
+
+\section{Ökonomische Betrachtung}
+\begin{enumerate}
+\item passive Nutzungsbestimmungen
+	\begin{itemize}
+	\item Zeitraumbegrenzung
+	\item Anzahl der Nutzungen
+	\item Länderbeschränkung
+	\end{itemize}
+\item aktive Nutzungbestimmungen
+	\begin{itemize}
+	\item Leserechte
+	\item bestimmte Anzahl von Druckkopien
+	\item Schreibrechte
+	\end{itemize}
+\item Nutzungsberechtigte
+	\begin{itemize}
+	\item eindeutige Benutzerzuweisung
+	\item eindeutige Gerätezuweisung
+	\end{itemize}
+\end{enumerate} 
+
+https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.2479
+Eventuell eigene Grafik erstellen
+
+
+\label{Ökonomische Betrachtung}
+
+\section{Bestehende Probleme}
+\label{sec:Bestehende Probleme}
+Vorangegange Betrachtungen haben das generelle Bild der digitalen Rechteverwaltung zum einen klar definiert. Zum anderen wurde eine gesellschaftliche und juristische Einordnung vorgestellt, die das Gesamtbild abrundet. 
+
+\end{spacing}

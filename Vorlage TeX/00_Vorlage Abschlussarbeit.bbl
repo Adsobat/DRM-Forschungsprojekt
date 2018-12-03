@@ -1,0 +1,31 @@
+\begin{thebibliography}{}
+
+\bibitem[Arnold~Picot, 2005]{LightWeightDRM}
+Arnold~Picot, H.~T., editor (2005).
+\newblock {\em {Distribution und Schutz digitaler Medien durch Digital Rights
+  Management}}.
+\newblock Springer-Verlag Berlin Heidelberg.
+
+\bibitem[Becker et~al., 2003]{Architektur}
+Becker, B., Buhse, W., Günnewig, D., and Rump, N., editors (2003).
+\newblock {\em {Digital Rights Management}}.
+\newblock Springer Verlag.
+
+\bibitem[Regner et~al., 2009]{TypesOfDRM}
+Regner, T., Barria, J.~A., V.Pitt, J., and Neville, B. (2009).
+\newblock {An artist life cycle model for digital media content: Strategies for
+  the Light Web and the Dark Web}.
+\newblock In {\em Electronic Commerce Research and Applications}.
+
+\bibitem[Willms~Buhse, 2008]{DRM}
+Willms~Buhse, D.~G. (2008).
+\newblock {\em Ökonomie der Musikindustrie}.
+\newblock Gabler.
+
+\bibitem[Yen et~al., 2012]{Superdistribution}
+Yen, C.-T., Liaw, H.-T., and Lo, N.-W. (2012).
+\newblock Digital rights management system with user privacy, usage
+  transparency, and superdistribution support.
+\newblock {\em International Journal of Communicatio Systems}.
+
+\end{thebibliography}
